@@ -3,8 +3,8 @@ import React from 'react';
 import './styles/Navbar.css';
 import logo from '../images/logo.jpg'
 
-class Navbar extends React.Component {
-  render() {
+
+function Navbar(){
     return (
       <div className="Navbar">
         <div className="container-fluid">
@@ -13,8 +13,7 @@ class Navbar extends React.Component {
           </a>
         </div>
       </div>
-    );
-  }
+    )
 }
 
-export default Navbar;
+export default Navbar

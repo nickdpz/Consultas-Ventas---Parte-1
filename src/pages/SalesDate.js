@@ -41,7 +41,6 @@ class SalesDate extends React.Component {
     this.setState({ loading: true, error: null });
     try {
       const data = await api.data.getDate(this.state.form.date);
-      console.log(data)
       if(data.message!=="error"){
         dataFilter=data.filter((event)=>{
           return (event.compro)
